@@ -1,5 +1,5 @@
 import { Shield, Globe, Lightbulb, Handshake, Award } from "lucide-react";
-import HeroSecDiv from "@/assets/section-dividers/hero-sec-wave.svg";
+
 
 const values = [
   { icon: Shield, label: "Integrity" },
@@ -12,11 +12,6 @@ const values = [
 const AboutSection = () => {
   return (
     <section id="about">
-      {/* <img
-          src={HeroSecDiv}
-          alt="Decorative divider"
-          className="absolute bottom-0 left-0 w-full"
-        /> */}
       <div className="section-padding bg-background">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">

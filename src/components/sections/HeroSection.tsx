@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
 import { ArrowRight } from "lucide-react";
-import HeroSecDiv from "@/assets/section-dividers/hero-sec-wave.svg";
+
 
 const HeroSection = () => {
   return (
@@ -19,11 +19,6 @@ const HeroSection = () => {
 
         <div className="absolute inset-0 bg-gradient-to-r from-surface-dark/95 via-surface-dark/80 to-surface-dark/60" />
 
-        {/* <img
-          src={HeroSecDiv}
-          alt="Decorative divider"
-          className="absolute bottom-0 left-0 w-full"
-        /> */}
       </div>
 
       {/* Content */}
@@ -62,13 +57,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Bottom accent line */}
-      {/* <div className="absolute bottom-0 left-0 right-0 h-1 gradient-accent" /> */}
-      {/* <img
-        src={HeroSecDiv}
-        alt="Decorative divider"
-        className="absolute bottom-0 left-0 w-full -z-0 pointer-events-none"
-      /> */}
     </section>
   );
 };
