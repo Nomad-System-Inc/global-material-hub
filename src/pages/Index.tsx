@@ -10,7 +10,6 @@ import WhyChooseUsSection from "@/components/sections/WhyChooseUsSection";
 import ContactSection from "@/components/sections/ContactSection";
 import WaveDivider from "@/components/WaveDivider";
 
-// CSS variable colors as computed HSL strings for SVG fills
 const colors = {
   background: "hsl(210, 20%, 98%)",
   secondary: "hsl(215, 15%, 92%)",
@@ -23,52 +22,52 @@ const Index = () => {
       <Navbar />
       <HeroSection />
 
-      {/* Hero → About */}
+      {/* Hero → About (asset: waveSmooth — organic flowing curves) */}
       <WaveDivider
         topColor={colors.surfaceDark}
         bottomColor={colors.background}
-        variant="gentle"
+        variant="waveSmooth"
       />
 
       <AboutSection />
 
-      {/* About → Industries */}
+      {/* About → Industries (asset: accentBottom — angular energy) */}
       <WaveDivider
         topColor={colors.background}
         bottomColor={colors.secondary}
-        variant="subtle"
+        variant="accentBottom"
       />
 
       <IndustriesSection />
 
-      {/* Industries → Products */}
+      {/* Industries → Products (asset: waveSharp — dramatic peaks) */}
       <WaveDivider
         topColor={colors.secondary}
         bottomColor={colors.background}
-        variant="smooth"
+        variant="waveSharp"
       />
 
       <ProductsSection />
 
-      {/* Products → Services */}
+      {/* Products → Services (asset: waveJagged — bold industrial feel) */}
       <WaveDivider
         topColor={colors.background}
         bottomColor={colors.surfaceDark}
-        variant="asymmetric"
+        variant="waveJagged"
       />
 
       <ServicesSection />
 
-      {/* Services → Network */}
+      {/* Services → Network (asset: waveSmooth — organic flowing) */}
       <WaveDivider
         topColor={colors.surfaceDark}
         bottomColor={colors.background}
-        variant="layered"
+        variant="waveSmooth"
       />
 
       <NetworkSection />
 
-      {/* Network → Why Choose Us */}
+      {/* Network → Why Choose Us (inline: gentle) */}
       <WaveDivider
         topColor={colors.background}
         bottomColor={colors.secondary}
@@ -77,11 +76,11 @@ const Index = () => {
 
       <WhyChooseUsSection />
 
-      {/* Why Choose Us → Contact */}
+      {/* Why Choose Us → Contact (asset: accentBottom) */}
       <WaveDivider
         topColor={colors.secondary}
         bottomColor={colors.surfaceDark}
-        variant="smooth"
+        variant="accentBottom"
       />
 
       <ContactSection />
