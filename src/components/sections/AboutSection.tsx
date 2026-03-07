@@ -1,5 +1,5 @@
 import { Shield, Globe, Lightbulb, Handshake, Award } from "lucide-react";
-import HeroSecDiv from "@/assets/section-dividers/hero-sec-wave.svg";
+
 
 const values = [
   { icon: Shield, label: "Integrity" },
