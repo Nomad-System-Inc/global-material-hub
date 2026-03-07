@@ -57,13 +57,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Bottom accent line */}
-      {/* <div className="absolute bottom-0 left-0 right-0 h-1 gradient-accent" /> */}
-      {/* <img
-        src={HeroSecDiv}
-        alt="Decorative divider"
-        className="absolute bottom-0 left-0 w-full -z-0 pointer-events-none"
-      /> */}
     </section>
   );
 };
