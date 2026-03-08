@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { productCategories } from "@/data/productCategories";
 import Navbar from "@/components/Navbar";
