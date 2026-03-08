@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { productCategories } from "@/data/productCategories";
 import Navbar from "@/components/Navbar";
@@ -48,6 +49,10 @@ const categoryImages: Record<string, string[]> = {
 
 const ProductCategoryPage = () => {
   const { slug } = useParams<{ slug: string }>();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
   const category = productCategories.find((c) => c.slug === slug);
 
   if (!category) {
@@ -75,8 +80,8 @@ const ProductCategoryPage = () => {
       <Navbar />
 
       {/* Hero Banner */}
-      <section className="relative pt-[72px]">
-        <div className="relative h-[340px] md:h-[420px] overflow-hidden">
+      <section className="relative">
+        <div className="relative h-[400px] md:h-[480px] overflow-hidden">
           <img
             src={images[0]}
             alt={category.title}
