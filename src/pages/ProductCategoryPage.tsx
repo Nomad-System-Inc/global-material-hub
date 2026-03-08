@@ -48,6 +48,10 @@ const categoryImages: Record<string, string[]> = {
 
 const ProductCategoryPage = () => {
   const { slug } = useParams<{ slug: string }>();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
   const category = productCategories.find((c) => c.slug === slug);
 
   if (!category) {
