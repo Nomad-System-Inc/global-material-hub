@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import AnimatedSection from "@/components/AnimatedSection";
 import StaggerChildren, { staggerItem } from "@/components/StaggerChildren";
+import SectionBackground from "@/components/SectionBackground";
 
 import coatingImg from "@/assets/products/coating-1.jpg";
 import oilfieldImg from "@/assets/products/oilfield-1.jpg";
@@ -34,54 +35,60 @@ const categories = [
 
 const ProductsSection = () => {
   return (
-    <section id="products" className="section-padding bg-background">
-      <div className="max-w-7xl mx-auto">
-        <AnimatedSection className="text-center mb-16">
-          <p className="text-accent font-heading font-semibold text-sm tracking-[0.2em] uppercase mb-4">
-            Our Products
-          </p>
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Comprehensive Material Portfolio
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            A diverse range of industrial raw materials sourced from trusted global suppliers.
-          </p>
-        </AnimatedSection>
+    <SectionBackground
+      pattern="bg-pattern-cross"
+      overlay="radial-gradient(ellipse at 30% 70%, hsl(38 92% 50% / 0.03) 0%, transparent 50%)"
+      className="section-padding bg-background"
+    >
+      <section id="products">
+        <div className="max-w-7xl mx-auto">
+          <AnimatedSection className="text-center mb-16">
+            <p className="text-accent font-heading font-semibold text-sm tracking-[0.2em] uppercase mb-4">
+              Our Products
+            </p>
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Comprehensive Material Portfolio
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              A diverse range of industrial raw materials sourced from trusted global suppliers.
+            </p>
+          </AnimatedSection>
 
-        <StaggerChildren className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5" staggerDelay={0.06}>
-          {categories.map(({ slug, name, image }) => (
-            <motion.div key={slug} variants={staggerItem}>
-              <Link
-                to={`/products/${slug}`}
-                className="group relative rounded-lg overflow-hidden border border-border hover:border-accent/40 transition-all hover:shadow-xl block"
-              >
-                <motion.div
-                  className="aspect-[4/3] overflow-hidden"
-                  whileHover={{ scale: 1.02 }}
-                  transition={{ duration: 0.3 }}
+          <StaggerChildren className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5" staggerDelay={0.06}>
+            {categories.map(({ slug, name, image }) => (
+              <motion.div key={slug} variants={staggerItem}>
+                <Link
+                  to={`/products/${slug}`}
+                  className="group relative rounded-lg overflow-hidden border border-border hover:border-accent/40 transition-all hover:shadow-xl block"
                 >
-                  <img
-                    src={image}
-                    alt={name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                </motion.div>
-                <div className="absolute inset-0 bg-gradient-to-t from-surface-dark/90 via-surface-dark/30 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-4 flex items-end justify-between">
-                  <h3 className="font-heading font-semibold text-sm md:text-base text-surface-dark-foreground">
-                    {name}
-                  </h3>
-                  <ArrowRight
-                    size={16}
-                    className="text-accent opacity-0 group-hover:opacity-100 transition-opacity"
-                  />
-                </div>
-              </Link>
-            </motion.div>
-          ))}
-        </StaggerChildren>
-      </div>
-    </section>
+                  <motion.div
+                    className="aspect-[4/3] overflow-hidden"
+                    whileHover={{ scale: 1.02 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <img
+                      src={image}
+                      alt={name}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </motion.div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-surface-dark/90 via-surface-dark/30 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-4 flex items-end justify-between">
+                    <h3 className="font-heading font-semibold text-sm md:text-base text-surface-dark-foreground">
+                      {name}
+                    </h3>
+                    <ArrowRight
+                      size={16}
+                      className="text-accent opacity-0 group-hover:opacity-100 transition-opacity"
+                    />
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </StaggerChildren>
+        </div>
+      </section>
+    </SectionBackground>
   );
 };
 

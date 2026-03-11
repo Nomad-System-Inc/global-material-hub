@@ -2,6 +2,8 @@ import { Shield, Globe, Lightbulb, Handshake, Award } from "lucide-react";
 import { motion } from "framer-motion";
 import AnimatedSection from "@/components/AnimatedSection";
 import StaggerChildren, { staggerItem } from "@/components/StaggerChildren";
+import SectionBackground from "@/components/SectionBackground";
+import heroBg from "@/assets/hero-bg.jpg";
 
 const values = [
   { icon: Shield, label: "Integrity" },
@@ -14,7 +16,14 @@ const values = [
 const AboutSection = () => {
   return (
     <section id="about">
-      <div className="section-padding bg-background">
+      <SectionBackground
+        pattern="bg-pattern-dots"
+        imageSrc={heroBg}
+        imageOpacity={0.04}
+        imagePosition="center top"
+        overlay="linear-gradient(180deg, hsl(210 20% 98%) 0%, hsl(210 20% 98% / 0.92) 50%, hsl(210 20% 98%) 100%)"
+        className="section-padding bg-background"
+      >
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection direction="left">
@@ -38,7 +47,7 @@ const AboutSection = () => {
             </AnimatedSection>
 
             <AnimatedSection direction="right" delay={0.2}>
-              <div className="bg-card rounded-lg p-8 border border-border shadow-sm">
+              <div className="bg-card rounded-lg p-8 border border-border shadow-sm backdrop-blur-sm">
                 <h3 className="font-heading font-semibold text-lg text-foreground mb-6">
                   Our Core Values
                 </h3>
@@ -61,7 +70,7 @@ const AboutSection = () => {
             </AnimatedSection>
           </div>
         </div>
-      </div>
+      </SectionBackground>
     </section>
   );
 };
