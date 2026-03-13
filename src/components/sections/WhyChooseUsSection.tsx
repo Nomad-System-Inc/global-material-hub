@@ -20,9 +20,9 @@ const WhyChooseUsSection = () => {
     <SectionBackground
       pattern="bg-pattern-diagonal"
       imageSrc={oilfieldImg}
-      imageOpacity={0.04}
+      imageOpacity={0.12}
       imagePosition="center"
-      overlay="linear-gradient(135deg, hsl(215 15% 92%) 0%, hsl(215 15% 92% / 0.92) 50%, hsl(215 15% 92%) 100%)"
+      overlay="linear-gradient(135deg, hsl(215 15% 92% / 0.82) 0%, hsl(215 15% 92% / 0.72) 50%, hsl(215 15% 92% / 0.82) 100%)"
       className="section-padding bg-secondary"
     >
       <section>

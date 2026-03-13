@@ -139,9 +139,9 @@ const ProductCategoryPage = () => {
       <SectionBackground
         pattern="bg-pattern-dots"
         imageSrc={images[0]}
-        imageOpacity={0.03}
+        imageOpacity={0.1}
         imagePosition="center"
-        overlay="linear-gradient(180deg, hsl(210 20% 98%) 0%, hsl(210 20% 98% / 0.94) 50%, hsl(210 20% 98%) 100%)"
+        overlay="linear-gradient(180deg, hsl(210 20% 98% / 0.85) 0%, hsl(210 20% 98% / 0.78) 50%, hsl(210 20% 98% / 0.85) 100%)"
         className="section-padding bg-background"
       >
         <div className="max-w-7xl mx-auto">
@@ -192,9 +192,9 @@ const ProductCategoryPage = () => {
       <SectionBackground
         pattern="bg-pattern-grid"
         imageSrc={images[1] || images[0]}
-        imageOpacity={0.035}
+        imageOpacity={0.1}
         imagePosition="center"
-        overlay="linear-gradient(180deg, hsl(215 15% 92%) 0%, hsl(215 15% 92% / 0.93) 50%, hsl(215 15% 92%) 100%)"
+        overlay="linear-gradient(180deg, hsl(215 15% 92% / 0.82) 0%, hsl(215 15% 92% / 0.72) 50%, hsl(215 15% 92% / 0.82) 100%)"
         className="section-padding bg-secondary"
       >
         <div className="max-w-7xl mx-auto">
@@ -261,8 +261,8 @@ const ProductCategoryPage = () => {
       <SectionBackground
         pattern="bg-pattern-hex"
         imageSrc={images[1] || images[0]}
-        imageOpacity={0.05}
-        overlay="linear-gradient(135deg, hsl(220 25% 12% / 0.96) 0%, hsl(220 25% 12% / 0.92) 100%)"
+        imageOpacity={0.15}
+        overlay="linear-gradient(135deg, hsl(220 25% 12% / 0.85) 0%, hsl(220 25% 12% / 0.78) 100%)"
         className="section-padding section-dark"
       >
         <div className="max-w-7xl mx-auto text-center">
