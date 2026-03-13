@@ -191,7 +191,10 @@ const ProductCategoryPage = () => {
       {/* Applications & Offerings */}
       <SectionBackground
         pattern="bg-pattern-grid"
-        overlay="radial-gradient(ellipse at 50% 0%, hsl(38 92% 50% / 0.03) 0%, transparent 50%)"
+        imageSrc={images[1] || images[0]}
+        imageOpacity={0.035}
+        imagePosition="center"
+        overlay="linear-gradient(180deg, hsl(215 15% 92%) 0%, hsl(215 15% 92% / 0.93) 50%, hsl(215 15% 92%) 100%)"
         className="section-padding bg-secondary"
       >
         <div className="max-w-7xl mx-auto">
