@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import AnimatedSection from "@/components/AnimatedSection";
 import StaggerChildren, { staggerItem } from "@/components/StaggerChildren";
 import SectionBackground from "@/components/SectionBackground";
+import oilfieldImg from "@/assets/products/oilfield-2.jpg";
 
 const reasons = [
   "Trusted global sourcing from verified suppliers",
