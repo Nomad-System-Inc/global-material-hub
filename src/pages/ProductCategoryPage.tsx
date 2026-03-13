@@ -139,9 +139,9 @@ const ProductCategoryPage = () => {
       <SectionBackground
         pattern="bg-pattern-dots"
         imageSrc={images[0]}
-        imageOpacity={0.03}
+        imageOpacity={0.1}
         imagePosition="center"
-        overlay="linear-gradient(180deg, hsl(210 20% 98%) 0%, hsl(210 20% 98% / 0.94) 50%, hsl(210 20% 98%) 100%)"
+        overlay="linear-gradient(180deg, hsl(210 20% 98% / 0.85) 0%, hsl(210 20% 98% / 0.78) 50%, hsl(210 20% 98% / 0.85) 100%)"
         className="section-padding bg-background"
       >
         <div className="max-w-7xl mx-auto">
