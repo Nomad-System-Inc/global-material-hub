@@ -12,9 +12,9 @@ const ContactSection = () => {
     <SectionBackground
       pattern="bg-pattern-circuit"
       imageSrc={heroBg}
-      imageOpacity={0.06}
+      imageOpacity={0.15}
       imagePosition="center bottom"
-      overlay="linear-gradient(180deg, hsl(220 25% 12% / 0.96) 0%, hsl(220 25% 12% / 0.9) 50%, hsl(220 25% 12% / 0.96) 100%)"
+      overlay="linear-gradient(180deg, hsl(220 25% 12% / 0.85) 0%, hsl(220 25% 12% / 0.78) 50%, hsl(220 25% 12% / 0.85) 100%)"
       className="section-padding section-dark"
     >
       <section id="contact">
