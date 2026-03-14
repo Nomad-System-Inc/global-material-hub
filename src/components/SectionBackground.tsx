@@ -8,8 +8,6 @@ interface SectionBackgroundProps {
   imagePosition?: string;
   overlay?: string;
   className?: string;
-  bleedTop?: boolean;
-  bleedBottom?: boolean;
 }
 
 const SectionBackground = ({
@@ -20,17 +18,13 @@ const SectionBackground = ({
   imagePosition = "center",
   overlay,
   className = "",
-  bleedTop = true,
-  bleedBottom = true,
 }: SectionBackgroundProps) => {
-  const bleedClasses = `${bleedTop ? "-mt-16 pt-16" : ""} ${bleedBottom ? "-mb-16 pb-16" : ""}`;
-
   return (
     <div className={`relative overflow-hidden ${className}`}>
-      {/* Background image layer — extends beyond section for wave blending */}
+      {/* Background image layer */}
       {imageSrc && (
         <div
-          className={`absolute pointer-events-none ${bleedTop ? "-top-24" : "top-0"} ${bleedBottom ? "-bottom-24" : "bottom-0"} left-0 right-0 bg-cover bg-no-repeat`}
+          className="absolute inset-0 pointer-events-none bg-cover bg-no-repeat"
           style={{
             backgroundImage: `url(${imageSrc})`,
             backgroundPosition: imagePosition,
@@ -42,7 +36,7 @@ const SectionBackground = ({
       {/* Overlay gradient */}
       {overlay && (
         <div
-          className={`absolute pointer-events-none ${bleedTop ? "-top-24" : "top-0"} ${bleedBottom ? "-bottom-24" : "bottom-0"} left-0 right-0`}
+          className="absolute inset-0 pointer-events-none"
           style={{ background: overlay }}
         />
       )}
