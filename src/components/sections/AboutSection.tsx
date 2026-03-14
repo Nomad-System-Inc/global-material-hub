@@ -19,9 +19,9 @@ const AboutSection = () => {
       <SectionBackground
         pattern="bg-pattern-dots"
         imageSrc={heroBg}
-        imageOpacity={0.12}
+        imageOpacity={0.25}
         imagePosition="center top"
-        overlay="linear-gradient(180deg, hsl(210 20% 98% / 0.85) 0%, hsl(210 20% 98% / 0.75) 50%, hsl(210 20% 98% / 0.85) 100%)"
+        overlay="linear-gradient(180deg, hsl(210 20% 98% / 0.88) 0%, hsl(210 20% 98% / 0.75) 50%, hsl(210 20% 98% / 0.88) 100%)"
         className="section-padding bg-background"
       >
         <div className="max-w-7xl mx-auto">

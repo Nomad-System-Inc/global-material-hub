@@ -37,10 +37,10 @@ const ProductsSection = () => {
   return (
     <SectionBackground
       pattern="bg-pattern-cross"
-      imageSrc={coatingImg}
-      imageOpacity={0.1}
+      imageSrc={paintImg}
+      imageOpacity={0.2}
       imagePosition="center"
-      overlay="linear-gradient(180deg, hsl(210 20% 98% / 0.85) 0%, hsl(210 20% 98% / 0.78) 50%, hsl(210 20% 98% / 0.85) 100%)"
+      overlay="linear-gradient(180deg, hsl(210 20% 98% / 0.88) 0%, hsl(210 20% 98% / 0.78) 50%, hsl(210 20% 98% / 0.88) 100%)"
       className="section-padding bg-background"
     >
       <section id="products">

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import AnimatedSection from "@/components/AnimatedSection";
 import StaggerChildren, { staggerItem } from "@/components/StaggerChildren";
 import SectionBackground from "@/components/SectionBackground";
-import networkImg from "@/assets/global-network.jpg";
+import lubricantImg from "@/assets/products/lubricant-1.jpg";
 
 const services = [
   { icon: Globe, name: "Global Raw Material Sourcing", description: "Connecting manufacturers with reliable global suppliers of raw materials and industrial chemicals." },
@@ -18,9 +18,9 @@ const ServicesSection = () => {
   return (
     <SectionBackground
       pattern="bg-pattern-hex"
-      imageSrc={networkImg}
-      imageOpacity={0.15}
-      overlay="linear-gradient(135deg, hsl(220 25% 12% / 0.88) 0%, hsl(220 25% 12% / 0.8) 50%, hsl(220 25% 12% / 0.88) 100%)"
+      imageSrc={lubricantImg}
+      imageOpacity={0.28}
+      overlay="linear-gradient(135deg, hsl(220 25% 12% / 0.82) 0%, hsl(220 25% 12% / 0.7) 50%, hsl(220 25% 12% / 0.82) 100%)"
       className="section-padding section-dark"
     >
       <section id="services">
