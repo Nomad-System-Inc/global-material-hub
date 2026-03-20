@@ -10,9 +10,9 @@ const NetworkSection = () => {
     <SectionBackground
       pattern="bg-pattern-topography"
       imageSrc={networkImg}
-      imageOpacity={0.25}
+      imageOpacity={0.08}
       imagePosition="center"
-      overlay="linear-gradient(180deg, hsl(210 20% 98% / 0.82) 0%, hsl(210 20% 98% / 0.68) 50%, hsl(210 20% 98% / 0.82) 100%)"
+      overlay="linear-gradient(180deg, hsl(210 20% 98% / 0.95) 0%, hsl(210 20% 98% / 0.92) 50%, hsl(210 20% 98% / 0.95) 100%)"
       className="section-padding bg-background"
     >
       <section id="network">

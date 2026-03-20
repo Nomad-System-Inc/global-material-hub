@@ -23,9 +23,9 @@ const IndustriesSection = () => {
     <SectionBackground
       pattern="bg-pattern-grid"
       imageSrc={compositeImg}
-      imageOpacity={0.22}
+      imageOpacity={0.08}
       imagePosition="center"
-      overlay="linear-gradient(180deg, hsl(215 15% 92% / 0.85) 0%, hsl(215 15% 92% / 0.72) 50%, hsl(215 15% 92% / 0.85) 100%)"
+      overlay="linear-gradient(180deg, hsl(215 15% 92% / 0.95) 0%, hsl(215 15% 92% / 0.92) 50%, hsl(215 15% 92% / 0.95) 100%)"
       className="section-padding bg-secondary"
     >
       <section id="industries">
