@@ -19,8 +19,8 @@ const ServicesSection = () => {
     <SectionBackground
       pattern="bg-pattern-hex"
       imageSrc={lubricantImg}
-      imageOpacity={0.28}
-      overlay="linear-gradient(135deg, hsl(220 25% 12% / 0.82) 0%, hsl(220 25% 12% / 0.7) 50%, hsl(220 25% 12% / 0.82) 100%)"
+      imageOpacity={0.1}
+      overlay="linear-gradient(135deg, hsl(220 25% 12% / 0.92) 0%, hsl(220 25% 12% / 0.88) 50%, hsl(220 25% 12% / 0.92) 100%)"
       className="section-padding section-dark"
     >
       <section id="services">

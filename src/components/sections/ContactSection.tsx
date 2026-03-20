@@ -12,9 +12,9 @@ const ContactSection = () => {
     <SectionBackground
       pattern="bg-pattern-circuit"
       imageSrc={oilfieldImg}
-      imageOpacity={0.25}
+      imageOpacity={0.1}
       imagePosition="center bottom"
-      overlay="linear-gradient(180deg, hsl(220 25% 12% / 0.82) 0%, hsl(220 25% 12% / 0.72) 50%, hsl(220 25% 12% / 0.82) 100%)"
+      overlay="linear-gradient(180deg, hsl(220 25% 12% / 0.92) 0%, hsl(220 25% 12% / 0.88) 50%, hsl(220 25% 12% / 0.92) 100%)"
       className="section-padding section-dark"
     >
       <section id="contact">
