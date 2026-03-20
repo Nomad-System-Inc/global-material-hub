@@ -261,8 +261,8 @@ const ProductCategoryPage = () => {
       <SectionBackground
         pattern="bg-pattern-hex"
         imageSrc={images[1] || images[0]}
-        imageOpacity={0.25}
-        overlay="linear-gradient(135deg, hsl(220 25% 12% / 0.8) 0%, hsl(220 25% 12% / 0.7) 100%)"
+        imageOpacity={0.1}
+        overlay="linear-gradient(135deg, hsl(220 25% 12% / 0.92) 0%, hsl(220 25% 12% / 0.88) 100%)"
         className="section-padding section-dark"
       >
         <div className="max-w-7xl mx-auto text-center">
