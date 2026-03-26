@@ -31,7 +31,7 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-accent font-heading font-semibold text-sm tracking-[0.3em] uppercase mb-6"
             >
-              Global Raw Material Solutions
+              Industrial Minerals & Chemicals
             </motion.p>
             <motion.h1
               initial={{ opacity: 0, y: 40 }}
@@ -39,8 +39,8 @@ const HeroSection = () => {
               transition={{ duration: 0.7, delay: 0.35 }}
               className="font-heading text-4xl md:text-5xl lg:text-7xl font-bold text-surface-dark-foreground leading-[1.1] mb-6"
             >
-              Powering Industries with{" "}
-              <span className="text-gradient-accent">Premium Raw Materials</span>
+              Powering Industry.{" "}
+              <span className="text-gradient-accent">Driving Sustainable Growth.</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 30 }}
@@ -48,8 +48,7 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="text-lg md:text-xl text-surface-dark-foreground/70 max-w-xl mb-10"
             >
-              Reliable sourcing, global distribution and supply chain expertise
-              for industrial chemicals, minerals and specialty materials.
+              An integrated platform delivering critical industrial minerals, chemicals and solutions across high-growth African markets.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}

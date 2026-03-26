@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -7,11 +8,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
           <div>
-            <h3 className="font-heading text-xl font-bold mb-4">
-              MAYRIADS<span className="text-gradient-accent"> ORYKTOS</span>
-            </h3>
+            <img src={logo} alt="Mayriads Oryktos" className="h-12 w-auto mb-4" />
             <p className="text-sm text-surface-dark-foreground/60 leading-relaxed">
-              Global Supplier of Industrial Raw Materials, Chemicals and Minerals. Connecting industries with reliable sourcing worldwide.
+              A premier Nigerian industrial minerals and chemicals company, specializing in sourcing, processing, and distribution of high-quality mineral resources and industrial chemicals.
             </p>
           </div>
 
@@ -33,7 +32,7 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-semibold mb-4 text-accent">Industries</h4>
             <ul className="space-y-2">
-              {["Construction", "Oil & Gas", "Paints & Coatings", "Plastics & Polymers", "Steel & Foundry"].map((ind) => (
+              {["Construction & Infrastructure", "Cement", "Oil & Gas", "Paints & Coatings", "Plastics & Polymers", "Ceramics & Refractories"].map((ind) => (
                 <li key={ind} className="text-sm text-surface-dark-foreground/60">{ind}</li>
               ))}
             </ul>

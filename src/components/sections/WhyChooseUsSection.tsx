@@ -7,12 +7,12 @@ import SectionBackground from "@/components/SectionBackground";
 import oilfieldImg from "@/assets/products/oilfield-2.jpg";
 
 const reasons = [
-  "Trusted global sourcing from verified suppliers",
-  "Competitive pricing through direct partnerships",
-  "End-to-end logistics and supply chain management",
-  "Technical expertise and product guidance",
-  "Flexible order quantities and sampling services",
-  "Dedicated account management and support",
+  "Integrated sourcing, processing, and distribution platform",
+  "Strategic partnerships with licensed mining operators",
+  "Consistent, multi-grade supply with rigorous quality assurance",
+  "Integrated logistics and delivery across West Africa",
+  "Competitive pricing through direct upstream partnerships",
+  "Customer-centric approach with tailored industrial solutions",
 ];
 
 const WhyChooseUsSection = () => {

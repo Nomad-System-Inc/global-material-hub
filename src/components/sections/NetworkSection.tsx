@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import AnimatedSection from "@/components/AnimatedSection";
 import SectionBackground from "@/components/SectionBackground";
 
-const regions = ["Africa", "Europe", "Middle East", "Asia", "North America"];
+const regions = ["Nigeria", "West Africa", "Europe", "Middle East", "Asia", "North America"];
 
 const NetworkSection = () => {
   return (
@@ -23,10 +23,10 @@ const NetworkSection = () => {
                 Global Network
               </p>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Sourcing From Every Continent
+                Strategically Positioned for Scale
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                Mayriads Oryktos works with a global network of suppliers and manufacturers across multiple regions, ensuring reliable access to the materials you need.
+                Strategically situated within Nigeria's resource-rich mineral landscape, Mayriads Oryktos leverages partnerships with licensed mining operators and global distribution networks to ensure reliable, scalable supply across West Africa and international markets.
               </p>
               <div className="flex flex-wrap gap-3">
                 {regions.map((region, i) => (

@@ -6,16 +6,16 @@ import SectionBackground from "@/components/SectionBackground";
 import compositeImg from "@/assets/products/composite-1.jpg";
 
 const industries = [
-  { icon: Building2, name: "Construction & Building" },
+  { icon: Building2, name: "Construction & Infrastructure" },
+  { icon: Building2, name: "Cement Raw Materials" },
   { icon: Fuel, name: "Oil & Gas" },
   { icon: Paintbrush, name: "Paints & Coatings" },
   { icon: Layers, name: "Adhesives & Sealants" },
   { icon: FlaskConical, name: "Plastics & Polymers" },
   { icon: GlassWater, name: "Ceramics & Refractories" },
-  { icon: Hammer, name: "Steel & Foundry" },
-  { icon: Tractor, name: "Agriculture" },
   { icon: Droplets, name: "Water Treatment" },
-  { icon: Factory, name: "Glass & Industrial Mfg" },
+  { icon: Factory, name: "Glass Manufacturing" },
+  { icon: Tractor, name: "Agriculture" },
 ];
 
 const IndustriesSection = () => {
@@ -38,7 +38,7 @@ const IndustriesSection = () => {
               Supplying Materials Across Sectors
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              From construction to water treatment, we deliver industrial-grade raw materials to the sectors that keep the world running.
+              A diversified, multi-sector portfolio enabling resilience, scalability, and cross-industry value creation across Nigeria and West Africa.
             </p>
           </AnimatedSection>
 
