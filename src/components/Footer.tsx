@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
           <div>
-            <img src={logo} alt="Mayriads Oryktos" className="h-12 w-auto mb-4" />
+            <img src={logo} alt="Mayriads Oryktos" className="h-20 w-auto mb-4" />
             <p className="text-sm text-surface-dark-foreground/60 leading-relaxed">
               A premier Nigerian industrial minerals and chemicals company, specializing in sourcing, processing, and distribution of high-quality mineral resources and industrial chemicals.
             </p>
