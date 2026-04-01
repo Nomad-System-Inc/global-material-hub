@@ -3,7 +3,7 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { productCategories } from "@/data/productCategories";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-light.png";
 
 const mainLinks = [
   { label: "Home", to: "/", hash: "#home" },
