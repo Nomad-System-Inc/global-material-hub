@@ -3,7 +3,7 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { productCategories } from "@/data/productCategories";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-light.png";
 
 const mainLinks = [
   { label: "Home", to: "/", hash: "#home" },
@@ -52,7 +52,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-surface-dark/95 backdrop-blur-md border-b border-border/10">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="Mayriads Oryktos" className="h-14 w-auto rounded-md bg-white/90 p-1" />
+          <img src={logo} alt="Mayriads Oryktos" className="h-16 md:h-20 w-auto drop-shadow-lg" />
         </Link>
 
         {/* Desktop */}

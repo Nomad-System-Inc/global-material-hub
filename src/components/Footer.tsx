@@ -1,5 +1,5 @@
 import { Mail, Phone, MapPin } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-light.png";
 
 const Footer = () => {
   return (
@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
           <div>
-            <img src={logo} alt="Mayriads Oryktos" className="h-24 w-auto mb-4 rounded-lg bg-white/90 p-2" />
+            <img src={logo} alt="Mayriads Oryktos" className="h-28 w-auto mb-4 drop-shadow-lg" />
             <p className="text-sm text-surface-dark-foreground/60 leading-relaxed">
               A premier Nigerian industrial minerals and chemicals company, specializing in sourcing, processing, and distribution of high-quality mineral resources and industrial chemicals.
             </p>
